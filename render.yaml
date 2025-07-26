@@ -3,7 +3,7 @@ services:
     name: freelancer
     env: python
     buildCommand: ""
-    startCommand: gunicorn your_project_name.wsgi:application
+    startCommand: gunicorn freelancer.wsgi:application
     envVars:
       - key: PYTHON_VERSION
         value: 3.11
